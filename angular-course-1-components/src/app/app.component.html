@@ -1,0 +1,67 @@
+<div class="top-menu">
+
+    <img class="logo"
+         src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
+
+</div>
+
+<div class="demo">
+        <div>
+                <!-- pipes -->
+                <!-- Start Date {{startDate | date}} -->
+               <!-- Start Date {{startDate | date: "MMM/dd/yyy"}} -->
+
+               <!-- Title: {{title | lowercase}} -->
+               <!-- Title: {{title | uppercase}} -->
+               <!-- Title: {{title | titlecase}}
+
+               Price: {{price | number}}
+
+               Price: {{price | number: '3.3-6'}} -->
+
+               <!-- Price: {{price | currency}} -->
+               <!-- Price: {{price | currency: 'GBP'}} -->
+               <!-- Price: {{price | currency: 'EUR'}} -->
+               <!-- Price: {{price | currency: 'UGX'}} -->
+
+               <!-- Percentage {{percentage | percent}} -->
+
+                <!-- object pipes -->
+                <!-- *ngFor='let course of courses | slice:0:5; index as i;  -->
+                <!-- {{courses | json}} -->
+
+                <div *ngFor = "let pair of newCourse | keyvalue">
+                        {{pair.key+': '+pair.value}}
+                </div>
+        </div>
+</div>
+
+<div class="courses"> 
+        <course-card 
+        *ngFor='let course of courses; index as i; 
+        first as isFirst; 
+        last as isLast; 
+        even as isEven; 
+        odd as isOdd'
+        [class.is-first]="isFirst"
+        [class.is-odd]="isOdd"
+        [class.is-even]="isEven"
+        [class.is-last]="isLast"
+        (courseSelected)='onCourseSelected($event)' 
+        [Course]="course" [cardIndex]="i+1">
+        
+        </course-card>
+
+        <!-- <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseOne"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseTwo"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseThree"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseFour"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseFive"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseSix"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseSeven"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseEight"></course-card>
+        <course-card (courseSelected)='onCourseSelected($event)' [Course]="courseNine"></course-card> -->
+        <!-- <course-card [Course]="courseTen"></course-card> -->
+</div>
+
+
