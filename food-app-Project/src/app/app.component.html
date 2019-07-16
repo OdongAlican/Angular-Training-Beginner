@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="navBar">
+      <app-categories 
+      *ngFor="let category of Categories"
+      [Category]='category'></app-categories>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search">
+    </div>
+</div>
+<div class="center">
+  <div class="sideBar">
+    <app-central-section
+    *ngFor="let sideCategory of sideCategories"
+    [SideCategory]="sideCategory">
+  </app-central-section>
+  </div>
+  <div class="rightSide">
+    <div class="top">
+      Popular Products
+    </div>
+  </div>
+</div>

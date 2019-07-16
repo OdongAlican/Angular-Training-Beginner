@@ -1,0 +1,49 @@
+body{
+    padding: 0;
+    margin: 0
+}
+.navBar {
+    display: flex;
+}
+
+.container {
+    width: 1130px;
+    background: #CC904A;
+    height: 40px;
+    padding-left: 150px;
+    display: flex;
+}
+
+.search{
+    padding-top: 10px;
+    border-radius: 10px;
+    padding-left: 150px;
+}
+
+.search input{
+    border-radius: 10px;
+    border: none;
+    height: 20px;
+}
+
+.sideBar{
+    width: 100px;
+    height: 415px;
+    background-color: #CC904A;
+    margin-top: 40px
+}
+
+.center{
+    display: flex;
+    background-color: pink;
+    height: 415px;
+    width: 900px;
+}
+
+.center .rightSide{
+    background-color: #CC904A;
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 30px;
+    width: 700px;
+}

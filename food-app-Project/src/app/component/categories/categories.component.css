@@ -1,0 +1,17 @@
+.innerDiv:hover {
+    background: #912421;
+    border-radius: 10%;
+}
+
+.innerDiv{
+    height: 20px;
+    margin-left: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: small
+}
+
+p{
+    padding: 2px;
+}

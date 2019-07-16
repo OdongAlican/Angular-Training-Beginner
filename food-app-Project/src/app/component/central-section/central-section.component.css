@@ -1,0 +1,16 @@
+.orderOnLine{
+    height: 200px;
+    width: 100px;
+    background-color: aqua
+}
+
+.heading{
+    width: 100px;
+    background: #791C1A;
+    height: 25px;
+    color: white
+}
+
+.heading p{
+    padding: 5px;
+}

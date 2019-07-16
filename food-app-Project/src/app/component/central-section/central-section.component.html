@@ -1,0 +1,9 @@
+<div class="orderOnLine">
+    <div class="heading">
+        <p>{{SideCategory.title}}</p>
+    </div>
+    <app-categories-item
+    *ngFor="let categoryItem of sideCategoryItems | slice:0:8;"
+    [SideCategoryItem]="categoryItem">
+</app-categories-item>
+</div>
