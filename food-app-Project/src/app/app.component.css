@@ -1,6 +1,6 @@
 body{
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 .navBar {
     display: flex;
@@ -30,20 +30,95 @@ body{
     width: 100px;
     height: 415px;
     background-color: #CC904A;
-    margin-top: 40px
+    margin-left: 10px
 }
 
 .center{
     display: flex;
     background-color: pink;
-    height: 415px;
-    width: 900px;
+    height: 450px;
+    width: 850px;
+    margin-left: 170px;
 }
 
 .center .rightSide{
     background-color: #CC904A;
-    margin-top: 40px;
     margin-left: 30px;
     height: 30px;
     width: 700px;
+}
+
+.center .middle{
+    background-color: blue;
+    margin-top: 20px;
+    height: 185px;
+    width: 700px;
+    display: flex
+
+}
+
+.center .bottom{
+    background-color: blue;
+    margin-top: 10px;
+    height: 185px;
+    width: 700px;
+    display: flex
+
+}
+
+.topCenter{    
+    width: 850px;
+    height: 150px;
+    background-color: aquamarine;
+    display: flex;
+    margin-left: 170px;
+    margin-bottom: 20px;
+}
+
+.topCenter .leftSection{
+    width: 400px;
+    height: 145px;
+    padding-left: 10px;
+    background-color: blueviolet;
+}
+
+.restaurantMoto{
+    width: 380;
+    height: 30px;
+    background-color: red;
+}
+
+.leftSection .middle{
+    display: flex;
+    width: 380;
+    height: 90px;
+    background-color: yellow
+}
+
+.leftSection .middle .restaurantDescription{
+    width: 250px;
+    height: 90px;
+    background-color: aqua;
+}
+
+.leftSection .middle .foodDisplayedCost{
+    width: 120px;
+    margin-left: 10px;
+    height: 90px;
+    background-color: white;
+}
+
+.leftSection .orderOnline{
+    margin-left: 250px;
+}
+
+.leftSection .orderOnline button{
+    background-color: lightgreen;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
 }

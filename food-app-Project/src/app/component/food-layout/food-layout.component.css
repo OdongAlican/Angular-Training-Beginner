@@ -1,0 +1,42 @@
+.foodLayout{
+    height: 120px;
+    width: 218px;
+    border: 1px solid grey;
+    margin-left: 10px;
+}
+
+.foodLayoutDescription{
+    margin-top: 10px;
+    height: 20px;
+    width: 208px;
+    display: flex;
+    margin-left: 10px;
+    background-color: red;
+    padding-left: 10px;
+}
+
+.foodLayoutButton{
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 218px;
+    display: flex;
+    background-color: green;
+}
+
+.foodLayoutButton button{
+    border-radius: 10px;
+    border: none
+}
+
+.foodLayoutButton .two{
+    margin-left: 35px;
+}
+
+.foodLayoutButton .one{
+    margin-left: 10px;
+}
+
+.descriptionTwo{
+    margin-left: 35px;
+}

@@ -8,6 +8,21 @@
       <input type="text" placeholder="Search">
     </div>
 </div>
+<div class="topCenter">
+  <div class="leftSection">
+    <div class="restaurantMoto"></div>
+    <div class="middle">
+      <div class="restaurantDescription"></div>
+      <div class="foodDisplayedCost"></div>
+    </div>
+    <div class="orderOnline">
+      <button>
+        Order Online
+      </button>
+    </div>
+  </div>
+  <div class="rightSection"></div>
+</div>
 <div class="center">
   <div class="sideBar">
     <app-central-section
@@ -18,6 +33,17 @@
   <div class="rightSide">
     <div class="top">
       Popular Products
+    </div>
+    <div class="middle">
+      <app-food-layout
+      *ngFor="let foodLayout of FoodLayouts"
+    [FoodLayout]="foodLayout"></app-food-layout>
+    </div>
+    <div class="bottom">
+      <app-fastfood
+      *ngFor="let fastFoods of FastFoods"
+    [FastFood]="fastFoods"
+      ></app-fastfood>
     </div>
   </div>
 </div>

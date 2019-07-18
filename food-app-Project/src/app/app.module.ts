@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { CategoriesComponent } from './component/categories/categories.component';
 import { CentralSectionComponent } from './component/central-section/central-section.component';
 import { CategoriesItemComponent } from './component/categories-item/categories-item.component';
+import { FoodLayoutComponent } from './component/food-layout/food-layout.component';
+import { FastfoodComponent } from './component/fastfood/fastfood.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
     CentralSectionComponent,
-    CategoriesItemComponent
+    CategoriesItemComponent,
+    FoodLayoutComponent,
+    FastfoodComponent
   ],
   imports: [
     BrowserModule,
