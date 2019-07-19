@@ -7,7 +7,7 @@ import { CategoriesComponent } from './component/categories/categories.component
 import { CentralSectionComponent } from './component/central-section/central-section.component';
 import { CategoriesItemComponent } from './component/categories-item/categories-item.component';
 import { FoodLayoutComponent } from './component/food-layout/food-layout.component';
-import { FastfoodComponent } from './component/fastfood/fastfood.component';
+import { FoodComponent } from './component/food/food.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { FastfoodComponent } from './component/fastfood/fastfood.component';
     CentralSectionComponent,
     CategoriesItemComponent,
     FoodLayoutComponent,
-    FastfoodComponent
+    FoodComponent
   ],
   imports: [
     BrowserModule,

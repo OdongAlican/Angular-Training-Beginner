@@ -16,4 +16,8 @@ export class FoodLayoutComponent implements OnInit {
   ngOnInit() {
   }
 
+  imageAvailable(){
+    return this.FoodLayout && this.FoodLayout.image
+  }
+
 }

@@ -1,9 +1,19 @@
 <div class="orderOnLine">
     <div class="heading">
-        <p>{{SideCategory.title}}</p>
+        <p>{{sideCategories[0].title}}</p>
     </div>
     <app-categories-item
     *ngFor="let categoryItem of sideCategoryItems | slice:0:8;"
     [SideCategoryItem]="categoryItem">
     </app-categories-item>
-</div>
+</div>  
+<div class="orderOnLine">
+    <div class="heading">
+        <p>{{sideCategories[1].title}}</p>
+    </div>
+    <app-categories-item
+    *ngFor="let categoryItem of sideCategoryItems | slice:9:17;"
+    [SideCategoryItem]="categoryItem">
+    </app-categories-item>
+</div>  
+

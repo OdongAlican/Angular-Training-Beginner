@@ -6,5 +6,6 @@
 }
 
 .item:hover{    
-    background-color: #781C1A
+    background-color: #781C1A;
+    color: white
 }

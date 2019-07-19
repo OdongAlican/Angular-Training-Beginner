@@ -1,7 +1,14 @@
 <div class="foodLayout">
-    <img 
-    [src]="" alt="food Image">
-   
+    <img width="220" height="120"
+    *ngIf="imageAvailable(); else noImage"
+    [src]="FoodLayout.image" alt="food Image">
+        <ng-template #noImage>
+            <p>
+              <b> <i>
+               No Image Available
+              </i> </b>
+            </p>
+        </ng-template>   
 </div>
 <div class="foodLayoutDescription">
     <div class="descripttionOne">

@@ -1,6 +1,4 @@
-import { FastFoods } from './../data/fast.foods';
 
-import { sideCategories } from '../data/side-category-data';
 import { Categories } from '../data/data.set';
 import { Component } from '@angular/core';
 import { FoodLayouts } from 'src/data/food.layout';
@@ -11,7 +9,6 @@ import { FoodLayouts } from 'src/data/food.layout';
 })
 export class AppComponent {
   Categories:[] = Categories;
-  sideCategories:[] = sideCategories
   FoodLayouts:[] = FoodLayouts
-  FastFoods:[] = FastFoods
+
 }

@@ -24,41 +24,42 @@ body{
     border-radius: 10px;
     border: none;
     height: 20px;
+    padding-left: 20px;
 }
 
 .sideBar{
-    width: 100px;
+    width: 130px;
     height: 415px;
     background-color: #CC904A;
-    margin-left: 10px
 }
 
 .center{
     display: flex;
-    background-color: pink;
+    /* background-color: pink; */
     height: 450px;
     width: 850px;
     margin-left: 170px;
+    margin-top: 30px;
 }
 
 .center .rightSide{
     background-color: #CC904A;
-    margin-left: 30px;
+    margin-left: 20px;
     height: 30px;
     width: 700px;
 }
 
 .center .middle{
-    background-color: blue;
+    /* background-color: blue; */
     margin-top: 20px;
     height: 185px;
     width: 700px;
-    display: flex
+    display: flex;
 
 }
 
 .center .bottom{
-    background-color: blue;
+    /* background-color: blue; */
     margin-top: 10px;
     height: 185px;
     width: 700px;
@@ -68,16 +69,16 @@ body{
 
 .topCenter{    
     width: 850px;
-    height: 150px;
+    height: 230px;
     background-color: aquamarine;
     display: flex;
     margin-left: 170px;
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .topCenter .leftSection{
     width: 400px;
-    height: 145px;
+    height: 220px;
     padding-left: 10px;
     background-color: blueviolet;
 }
@@ -91,20 +92,20 @@ body{
 .leftSection .middle{
     display: flex;
     width: 380;
-    height: 90px;
+    height: 145px;
     background-color: yellow
 }
 
 .leftSection .middle .restaurantDescription{
     width: 250px;
-    height: 90px;
+    height: 145px;
     background-color: aqua;
 }
 
 .leftSection .middle .foodDisplayedCost{
-    width: 120px;
+    width: 140px;
     margin-left: 10px;
-    height: 90px;
+    height: 145px;
     background-color: white;
 }
 
@@ -121,4 +122,20 @@ body{
     border-radius: 10px;
     height: 30px;
     width: 150px;
+    margin-top: 10px;
+    border: none
+}
+
+.companyName{
+    widows: 1130px;
+    height: 260px;
+    background-color: #781C1A;
+    padding-top: 10px;
+}
+
+.nameAndLogo{
+    background-color: white;
+    margin-left: 500px;
+    width: 200px;
+    height: 40px;
 }

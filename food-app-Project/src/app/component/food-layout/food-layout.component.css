@@ -1,7 +1,7 @@
 .foodLayout{
     height: 120px;
-    width: 218px;
-    border: 1px solid grey;
+    width: 220px;
+    border: 1px solid lightgray;
     margin-left: 10px;
 }
 
@@ -11,28 +11,36 @@
     width: 208px;
     display: flex;
     margin-left: 10px;
-    background-color: red;
+    /* background-color: red; */
     padding-left: 10px;
 }
 
 .foodLayoutButton{
     height: 20px;
-    margin-top: 10px;
     margin-left: 10px;
     width: 218px;
     display: flex;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .foodLayoutButton button{
     border-radius: 10px;
-    border: none
+    border: none;
+    color: white;
+    height: 25px;
 }
 
 .foodLayoutButton .two{
-    margin-left: 35px;
+    margin-left: 40px;
 }
 
+.foodLayoutButton .two button{
+    background-color: red;
+}
+
+.foodLayoutButton .one button{
+    background-color: green;
+}
 .foodLayoutButton .one{
     margin-left: 10px;
 }
