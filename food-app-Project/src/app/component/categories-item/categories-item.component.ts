@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { SideCategoryItem } from 'src/app/model/siteCategoryItem';
-
 @Component({
   selector: 'app-categories-item',
   templateUrl: './categories-item.component.html',
@@ -10,10 +9,15 @@ export class CategoriesItemComponent implements OnInit {
 
   @Input()
   SideCategoryItem:SideCategoryItem
-  
-  constructor() { }
+
+  constructor() {}
 
   ngOnInit() {
+  }
+
+  displayFood(){
+    console.log('this is the button')
+
   }
 
 }

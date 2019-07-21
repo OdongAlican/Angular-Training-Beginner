@@ -1,0 +1,59 @@
+.container{
+    width: 400px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.screen{
+    background-color: blue;
+    width: 370px;
+    margin-left: 15px;
+    height: 60px;
+}
+
+.screen input{
+    width: 370px;
+    height: 60px;
+    margin-left: -3px;
+    font-weight: bold;
+    font-size: larger;
+
+}
+
+.equal{
+    width: 370px;
+    margin-left: 15px;
+    height: 40px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.equal button{
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}   
+
+.first, .second, .third, .fourth{
+    width: 370px;
+    height: 60px;
+    background-color: green;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    display: flex;
+}
+
+.first button, .second button, .third button, .fourth button{
+    width: 80px;
+    height: 40px;
+    margin: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
