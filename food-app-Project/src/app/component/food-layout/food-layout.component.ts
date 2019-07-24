@@ -16,11 +16,11 @@ export class FoodLayoutComponent implements OnInit {
   emittFood = new EventEmitter<FoodLayout>()
   
   constructor(public renderer: Renderer2) { 
-    this.renderer.listen('window', 'click',(e:Event)=>{
-      this.emittFood.emit(this.FoodLayout)
-      console.log('we are home')
+    // this.renderer.listen('window', 'click',(e:Event)=>{
+    //   this.emittFood.emit(this.FoodLayout)
+    //   console.log('we are home')
 
-   })
+  //  })
   }
 
   ngOnInit() {

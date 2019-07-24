@@ -30,20 +30,21 @@
 </div>
 <div class="center">
   <div class="sideBar">
-    <app-central-section></app-central-section>
+    <app-central-section
+    (samplefood)="displayFoodlayout($event)"></app-central-section>
   </div>
   <div class="rightSide">
     <div class="top">
       Popular Products
     </div>
     <div class="middle">
-      <app-food-layout (displayFood)="displayFoodSelected($event)"
+      <app-food-layout 
         *ngFor="let foodLayout of FoodLayouts | slice:0:3"
         [FoodLayout]="foodLayout">
       </app-food-layout>
     </div>
     <div class="bottom">
-        <app-food-layout (displayFood)="displayFoodSelected($event)"
+        <app-food-layout 
         *ngFor="let foodLayout of FoodLayouts | slice:3:6"
         [FoodLayout]="foodLayout">
       </app-food-layout>

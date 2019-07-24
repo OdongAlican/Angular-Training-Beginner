@@ -15,5 +15,10 @@
     *ngFor="let categoryItem of sideCategoryItems | slice:9:17;"
     [SideCategoryItem]="categoryItem">
     </app-categories-item>
+    <div class="sampleButton">
+        <button
+        (click)="createSampleFood()"
+        >Sample</button>
+    </div>
 </div>  
 
