@@ -1,4 +1,4 @@
-import { FoodLayout } from './../../model/food.layout';
+import { FoodLayout } from './../../../model/food.layout';
 import { Component, OnInit, Input, Renderer2, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
@@ -15,13 +15,7 @@ export class FoodLayoutComponent implements OnInit {
   @Output()
   emittFood = new EventEmitter<FoodLayout>()
   
-  constructor(public renderer: Renderer2) { 
-    // this.renderer.listen('window', 'click',(e:Event)=>{
-    //   this.emittFood.emit(this.FoodLayout)
-    //   console.log('we are home')
-
-  //  })
-  }
+  constructor(public renderer: Renderer2) {}
 
   ngOnInit() {
   }

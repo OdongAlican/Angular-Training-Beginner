@@ -1,0 +1,24 @@
+<div class="center">
+        <div class="orderOnLine">
+                <div class="heading">
+                    <p>{{sideCategories[0].title}}</p>
+                </div>
+                <app-categories-item
+                    *ngFor="let FoodLayoutEl of FoodLayouts | slice:0:8"
+                    [FoodLayout]="FoodLayoutEl"
+                    (singleFood)="createSampleFood(FoodLayoutEl)">
+                </app-categories-item>
+            </div>  
+            <div class="orderOnLine">
+                <div class="heading">
+                    <p>{{sideCategories[1].title}}</p>
+                </div>
+                <app-categories-item
+                    *ngFor="let FoodLayoutEl of FoodLayouts | slice:9:17"
+                    [FoodLayout]="FoodLayoutEl"
+                    (singleFood)="createTwoSampleFood(FoodLayoutEl)">
+                </app-categories-item>
+            </div>  
+</div>
+
+
