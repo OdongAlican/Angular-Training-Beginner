@@ -9,18 +9,18 @@ import { FoodLayouts } from 'src/data/food.layout';
 })
 export class FoodListComponent implements OnInit {
 
+  foodWasSelected:FoodLayout
+ 
   @Output()
   oneSingleFood = new EventEmitter<FoodLayout>()
-
-  FoodLayouts:[] = FoodLayouts
-
+  
   constructor() { }
 
   ngOnInit() {
   }
 
-  createSampleFood(food:FoodLayout){
-    this.oneSingleFood.emit(food)
+  foodWasSelectedOnce(food:FoodLayout){
+    this.foodWasSelected = food
   }
 
 }

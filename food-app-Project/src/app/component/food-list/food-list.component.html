@@ -1,7 +1,7 @@
 <div class="container">
   <div class="left">
       <app-central-section
-      (samplefood)="foodWasSelected = $event"
+      (samplefood)="foodWasSelectedOnce($event)"
       (sampleTwofood)="foodTwoWasSelected = $event">
       </app-central-section>
   </div>
@@ -9,7 +9,7 @@
       <div class="top">
         Popular Products
       </div>
-      <div class="middle">
+      <div class="middle" style="display:flex">
           <app-food-layout
           *ngIf="foodWasSelected; else infoText"
           [FoodLayout]="foodWasSelected">
