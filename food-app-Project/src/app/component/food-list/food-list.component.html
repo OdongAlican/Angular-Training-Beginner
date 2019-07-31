@@ -1,31 +1,35 @@
 <div class="container">
   <div class="left">
-      <app-central-section
-      (samplefood)="foodWasSelectedOnce($event)"
-      (sampleTwofood)="foodTwoWasSelected = $event">
-      </app-central-section>
+      <app-central-section></app-central-section>
   </div>
   <div class="center">
       <div class="top">
         Popular Products
       </div>
-      <div class="middle" style="display:flex">
-          <app-food-layout
-          *ngIf="foodWasSelected; else infoText"
-          [FoodLayout]="foodWasSelected">
+      <div class="middle">
+        <div class="upperSection"
+        *ngFor="">
+            <app-food-layout
+            *ngIf="foodWasSelected; else infoText"
+            [FoodLayout]="foodWasSelected">
           </app-food-layout>
-          <ng-template #infoText>
-          <p>Please select a Food!</p>
-        </ng-template>
+            <ng-template #infoText>
+              <p>
+                Please select a Food!
+              </p>  
+            </ng-template>
+        </div>
       </div>
       <div class="down">
           <app-food-layout
-          *ngIf="foodTwoWasSelected; else infoText"
-          [FoodLayout]="foodTwoWasSelected">
+            *ngIf="foodWasSelected; else infoText"
+            [FoodLayout]="foodWasSelected">
           </app-food-layout>
-          <ng-template #infoText>
-          <p>Please select a Food!</p>
-        </ng-template>
+            <ng-template #infoText>
+              <p>
+                Please select a Food!
+              </p>
+            </ng-template>
       </div>
   </div>
   </div>

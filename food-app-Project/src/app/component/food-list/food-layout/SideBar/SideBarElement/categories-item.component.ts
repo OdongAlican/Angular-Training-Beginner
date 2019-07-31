@@ -1,25 +1,24 @@
 import { FoodLayout } from './../../../../../model/food.layout';
 
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { FoodLayouts } from 'src/data/food.sevice';
 @Component({
   selector: 'app-categories-item',
   templateUrl: './categories-item.component.html',
   styleUrls: ['./categories-item.component.css']
 })
 export class CategoriesItemComponent implements OnInit {
-  
-  @Output() singleFood = new EventEmitter<void>()
 
   @Input()
   FoodLayout:FoodLayout
 
-  constructor() {}
+  constructor(private foodLayouts:FoodLayouts) {}
 
   ngOnInit() {
   }
-  
-  onFoodSelected(){
-    this.singleFood.emit()
-  }
 
+  onFoodSelected(){
+    this.foodLayouts.foodSelected.emit(this.FoodLayout)
+  }
+  
 }

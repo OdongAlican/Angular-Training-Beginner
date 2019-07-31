@@ -1,6 +1,5 @@
 import { FoodLayout } from './../../../model/food.layout';
-import { Component, OnInit, Input, Renderer2, Output } from '@angular/core';
-import { EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-food-layout',
@@ -12,13 +11,9 @@ export class FoodLayoutComponent implements OnInit {
   @Input()
   FoodLayout:FoodLayout
 
-  @Output()
-  emittFood = new EventEmitter<FoodLayout>()
-  
-  constructor(public renderer: Renderer2) {}
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   imageAvailable(){
     return this.FoodLayout && this.FoodLayout.image

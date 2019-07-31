@@ -5,8 +5,7 @@
                 </div>
                 <app-categories-item
                     *ngFor="let FoodLayoutEl of FoodLayouts | slice:0:8"
-                    [FoodLayout]="FoodLayoutEl"
-                    (singleFood)="createSampleFood(FoodLayoutEl)">
+                    [FoodLayout]="FoodLayoutEl">
                 </app-categories-item>
             </div>  
             <div class="orderOnLine">
@@ -15,8 +14,7 @@
                 </div>
                 <app-categories-item
                     *ngFor="let FoodLayoutEl of FoodLayouts | slice:9:17"
-                    [FoodLayout]="FoodLayoutEl"
-                    (singleFood)="createTwoSampleFood(FoodLayoutEl)">
+                    [FoodLayout]="FoodLayoutEl">
                 </app-categories-item>
             </div>  
 </div>
